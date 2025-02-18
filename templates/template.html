@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>CaTag</title>
+   <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+ </head>
+ <body>
+    <header>
+        <div class="container">
+            <strong><nav>
+              <ul class="menu">
+                <a href="{{ url_for('tags') }}">Tags</a>
+                <a href="{{ url_for('labels') }}">Labels</a>
+                <a href="{{ url_for('players') }}">Players</a>
+                <a href="{{ url_for('teams') }}">Teams</a>
+              </ul>
+            </nav></strong>
+          </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+
+ </body>
+</html>
